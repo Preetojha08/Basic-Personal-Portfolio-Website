@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+:root{
+    /* Colors */
+    --bg-color: #e7eafb;
+    --primary: #01a29c;
+    --hover: #008170;
+  
+    /* Fonts */
+    --h1-font: 2.2rem;
+    --h2-font: 1.1rem;
+    --p-font: 0.9rem;
+    --spacing: 1px;
+    /* Margins */
+    --m-1: 0.4rem;
+    --m-4: 2rem;
+  }
+
+  
