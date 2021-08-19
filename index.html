@@ -4,45 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-
-    <!-- CSS Link -->
+    <title>Responsive Portfolio Website</title>
+    <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Link -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
-
-    <!-- Nav Bar -->
+    <!-- Navbar -->
     <header>
+        <a href="#home" class="logo">portfolio</a>
+        <div id="menu-icon" class="fas fa-bars"></div>
 
-        <a href="#" class="logo">Portfolio.me</a>
-        <div id="menu_icon" class="fas fa-bars" ></div>
-
-        <ul class="nav_bar">
-
-            <li><a href="#"> Home </a></li>
-            <li><a href="#"> About Us </a></li>
-            <li><a href="#"> Skills </a></li>
-            <li><a href="#"> Projects </a></li>
-            <li><a href="#"> Certificates </a></li>
-            <li><a href="#"> Contact </a></li>
-
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#portfolio">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
     </header>
-    
 
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Hi, I'm <span>Preet Ojha</span></h1>
+            <h2>Android Application | Web Developer | UI/UX Designer</h2>
+            <p></p>
+            <a href="#" class="btn">Buy me a Coffee</a> 
+        </div>
+    </section>
+    
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img class="img_about" src="images/new_po.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <h1>Preet Ojha</h1>
+            <p>I am Dedicated with the right attitude towards betterment, and I am looking forward to taking on new challenges to start a career where I can enhance my skills and increase productivity for the same. </p>
+            <p>Seeking employment for the position of Android developer. Under my employment, the company can trust in my earned expertise not only in discovering tactical strategies but also entrust in providing the company with the guidance needed to enhance their digital presence.</p>
+            <a href="#" class="btn">Download Cv</a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h1>Skills</h1>
+        </div>
+        <!-- Content -->
+        <div class="skills-content">
+            <div class="skills-bars">
+                <div class="skills-text">
+                    <h2>My Skills</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto aspernatur quibusdam veniam ipsam. Voluptate.</p>
+
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-android"><h3>Android</h3></i>
+                    <span>94%</span>
+                    <div class="percent-bar android-bar"></div>
+                </div>
+
+                <div class="skills-box">
+                    <i class="fab fa-java"><h3>Java</h3></i>
+                    <span>94%</span>
+                    <div class="percent-bar java-bar"></div>
+                </div>
+
+                <div class="skills-box">
+                    <i class="fab fa-php"><h3>PHP</h3></i>
+                    <span>74%</span>
+                    <div class="percent-bar php-bar"></div>
+                </div>
+
+                <div class="skills-box">
+                    <i class="fab fa-html5"><h3>HTML</h3></i>
+                    <span>70%</span>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+
+                <div class="skills-box">
+                    <i class="fab fa-css3"><h3>CSS</h3></i>
+                    <span>70%</span>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+
+                <div class="skills-box">
+                    <i class="fab fa-js"><h3>JavaScript</h3></i>
+                    <span>35%</span>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+
+                <div class="skills-box">
+                    <i class="fas fa-palette"><h3>UI/UX</h3></i>
+                    <span>50%</span>
+                    <div class="percent-bar ux-bar"></div>
+                </div>
+
+            </div>
+            <div class="skills-img">
+                <img src="images/skill_5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        
+        <div class="heading">
+            <h1>Projects</h1>
+        </div>
+
+        <!-- Content -->
+        <div class="portfolio-content">
+            <div class="p-box">
+                <div class="p-img">
+                    <img src="images/calculator.png" alt="">
+                    
+                </div>
+                <h2>GTU Marks Calculator</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perferendis consectetur illo, consequuntur culpa delectus?</p>
+            </div>
+            <div class="p-box">
+                <div class="p-img">
+                    <img src="images/e_coder.png" alt="">
+                    
+                </div>
+                <h2>Android E Coder</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perferendis consectetur illo, consequuntur culpa delectus?</p>
+            </div>
+            <div class="p-box">
+                <div class="p-img">
+                    <img src="images/covid.png" alt="">
+                    
+                </div>
+                <h2>Covid Soft Test</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perferendis consectetur illo, consequuntur culpa delectus?</p>
+            </div>
+
+            <div class="p-box">
+                <div class="p-img">
+                    <img src="images/ngo.png" alt="">
+                    
+                </div>
+                <h2>NGO Management System</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perferendis consectetur illo, consequuntur culpa delectus?</p>
+            </div>
+
+            <div class="p-box">
+                <div class="p-img">
+                    <img src="images/airplane.png" alt="">
+                    
+                    <!-- India Travel & Tourism Website -->
+                </div>
+                <h2>India Travel & Tourism Website  </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perferendis consectetur illo, consequuntur culpa delectus?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h1>Contact</h1>
+        </div>
+        <!-- Content -->
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91 997 467 5848</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-envelope-open"></i>
+                    <p class="info-box_email">developer.preetojha08@gmail.com</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Ahmedabad Gujarat, INDIA</p>
+                </div>
+                <div class="info-box social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-google-play"></i></a>
+                    
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Your Name *">
+                    <input type="email" placeholder="Enter Your Email *">
+                    <input type="email" placeholder="Enter Subject *">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here... *"></textarea>
+                    <input type="button" value="Send" class="contact-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; Creatures ♥ All Right Reserved</p>
+    </div>
+    
+    <!-- Link To JS -->
     <script src="main.js"></script>
 </body>
 </html>
