@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header>
+    <header class="header_class">
         <a href="#home" class="logo">portfolio</a>
         <div id="menu-icon" class="fas fa-bars"></div>
 
@@ -46,7 +46,8 @@
             <h1>Preet Ojha</h1>
             <p>I am Dedicated with the right attitude towards betterment, and I am looking forward to taking on new challenges to start a career where I can enhance my skills and increase productivity for the same. </p>
             <p>Seeking employment for the position of Android developer. Under my employment, the company can trust in my earned expertise not only in discovering tactical strategies but also entrust in providing the company with the guidance needed to enhance their digital presence.</p>
-            <a href="#" class="btn">Download Cv</a>
+            <!-- <a href="https://drive.google.com/file/d/113ARn7Bo0LbMeyyue9mXMjBej3Navrqy/view?usp=sharing" class="btn" download target="blank">Download Cv</a> -->
+            <a href="images/bg.jpg" class="btn" download="download" >Download Cv</a>
         </div>
     </section>
 
@@ -216,5 +217,15 @@
     
     <!-- Link To JS -->
     <script src="main.js"></script>
+
+    <script>
+
+        $(window).scroll(function(){
+
+            $('header').toggleClass('scrolled',$(this).scrollTop()>50);
+
+        });
+
+    </script>
 </body>
 </html>
