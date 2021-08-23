@@ -44,6 +44,7 @@ section {
   padding: 50px 100px;
 }
 
+
 header {
   position: fixed;
   width: 100%;
@@ -79,6 +80,9 @@ header {
   color: #fff;
   font-weight: 500;
 }
+
+section#home:hover~header .navbar a[href="home"],
+section#about:hover~header .navbar a[href="about"],
 header .navbar a:hover {
   color: var(--primary);
   font-size: 1.6rem;

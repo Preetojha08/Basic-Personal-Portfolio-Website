@@ -8,6 +8,7 @@
     <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css">
 
+     <!-- Link To Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Font Awesome -->
@@ -19,14 +20,17 @@
         <a href="#home" class="logo">portfolio</a>
         <div id="menu-icon" class="fas fa-bars"></div>
 
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#portfolio">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav>
+            <ul class="navbar">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a class="" href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#portfolio">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
     </header>
 
     <!-- Home -->
@@ -220,15 +224,5 @@
     
     <!-- Link To JS -->
     <script src="main.js"></script>
-
-    <script>
-
-        $(window).scroll(function(){
-
-            $('header').toggleClass('scrolled',$(this).scrollTop()>50);
-
-        });
-
-    </script>
 </body>
 </html>
