@@ -305,7 +305,7 @@ header .navbar a:hover {
   text-align: left;
 }
 .c-box-content{
-  float: right;
+  float: inline-start;
   padding-top: 5px;
   margin-left: 10px;
 }
@@ -314,10 +314,12 @@ header .navbar a:hover {
   width: 100px;
   float: left;
   height: 100px;
-  padding: 10px;
+  padding: 15px;
 }
 .c-img img {
   float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 100%;
   width: 100%;
   border-radius: 25%;
