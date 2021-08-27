@@ -26,6 +26,8 @@ body::-webkit-scrollbar-thumb {
   --hover: #008170;
 
   /* Fonts */
+  --logo-font: 2rem;
+  --nav_menu-font: 1rem;
   --h1-font: 2.2rem;
   --h2-font: 1.1rem;
   --p-font: 0.9rem;
@@ -35,7 +37,7 @@ body::-webkit-scrollbar-thumb {
   --m-4: 2rem;
 }
 html {
-  background: #1c2834;
+  background: #000;
   color: #fff;
 }
 section {
@@ -47,6 +49,7 @@ header {
   top: 0;
   right: 0;
   z-index: 1000;
+  margin-top: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,7 +60,7 @@ header {
 }
 .logo {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: var(--logo-font);
   font-weight: 600;
   color: var(--primary);
 }
@@ -65,14 +68,10 @@ header {
   display: flex;
 }
 .navbar a {
-  font-size: 1rem;
+  font-size: var(--nav_menu-font);
   padding: 10px 20px;
   color: white;
   font-weight: 500;
-}
-
-.navbar.active{
-  background: black;
 }
 
 header .navbar a:hover {
@@ -145,7 +144,7 @@ header .navbar a:hover {
 }
 
 .img_about {
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .about-img img {
@@ -162,9 +161,12 @@ header .navbar a:hover {
   color: var(--primary);
 }
 .about-text h1 {
+  display: flex;
+  justify-content: left;
   font-size: var(--h1-font);
   font-weight: 600;
 }
+
 .about-text p {
   font-size: var(--p-font);
   margin: 1rem 0 var(--m-4);
@@ -447,10 +449,45 @@ form textarea {
 /* Making Responsive */
 
 /* 1st Responsive Loook */
+
+@media (max-width: 1110px){
+  :root {
+    --logo-font: 1.8rem;
+    --nav_menu-font: 0.8rem;
+  }
+  
+}
+
+
 /* Perfect Working */
+
 @media (max-width: 991px) {
-  header {
-    padding: 15px 80px;
+  
+  #menu-icon {
+    display: initial;
+    color: #ffffff;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--bg-color);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.5s ease;
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .navbar a {
+    margin: 1rem;
+    padding: 1.5rem;
+    display: block;
+    background: transparent;
+    border-left: 2px solid var(--primary);
   }
   section {
     padding: 50px 80px;
@@ -506,8 +543,31 @@ form textarea {
     --h2-font: 1rem;
     --m-4: 1.4rem;
   }
-  header {
-    padding: 13px 65px;
+  #menu-icon {
+    display: initial;
+    color: #ffffff;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--bg-color);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.5s ease;
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .navbar a {
+    margin: 1rem;
+    padding: 1.5rem;
+    display: block;
+    background: transparent;
+    border-left: 2px solid var(--primary);
   }
   section {
     padding: 50px 65px;
@@ -572,10 +632,6 @@ form textarea {
   header .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  .p-box {
-    width: auto;
-    height: auto;
-  }
   .navbar a {
     margin: 1rem;
     padding: 1.5rem;
@@ -583,6 +639,11 @@ form textarea {
     background: transparent;
     border-left: 2px solid var(--primary);
   }
+  .p-box {
+    width: auto;
+    height: auto;
+  }
+  
   .home {
     background: black;
     justify-content: center;
