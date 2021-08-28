@@ -341,7 +341,7 @@ header .navbar li .active,header .navbar a:hover {
   --hover: #008170; */
 
 .c-box:hover, .p-box:hover {
-  border: none;
+  transform: scale(1.1);
   background: linear-gradient(#008170,#01a29c);
 }
 .p-img {
@@ -398,6 +398,11 @@ header .navbar li .active,header .navbar a:hover {
   margin-left: 1rem;
   font-weight: 400;
 }
+
+.social a:hover {
+  transform: scale(1.5);
+}
+
 .social {
   display: flex;
   align-items: center;
@@ -435,7 +440,6 @@ form textarea {
   letter-spacing: 1px;
   cursor: pointer;
 }
-
 .contact-button:hover{
   background: linear-gradient(#01a29c,#008170);
 }
@@ -444,6 +448,7 @@ form textarea {
   text-align: center;
   background: var(--primary);
 }
+
 
 
 /* Making Responsive */
