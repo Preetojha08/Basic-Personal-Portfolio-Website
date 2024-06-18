@@ -82,6 +82,7 @@ header .navbar li .active,header .navbar a:hover {
   cursor: pointer;
   display: none;
 }
+
 /* Home */
 .home {
   position: relative;
@@ -89,17 +90,18 @@ header .navbar li .active,header .navbar a:hover {
   min-height: 100vh;
   color: #222435;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--bg-color);
-  /* background: url(images/background.png) no-repeat; */
-  /* background: url(img/bg.jpg) no-repeat; */
-  /* background: url(img/toon/bg.jpg) no-repeat; */
-  background: url(img/toon/bg.jpg) no-repeat;
+  background-color: #000;
   background-size: cover;
   background-position: right center;
 }
 .home-text {
+  flex: 1;
   max-width: 500px;
+  padding: 20px;
+  color: white;
 }
 .home-text h1 {
   font-size: var(--h1-font);
@@ -130,32 +132,54 @@ header .navbar li .active,header .navbar a:hover {
 .btn:hover {
   background: linear-gradient(#01a29c,#008170);
 }
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_img {
+  margin-left: 30vh;
+  padding-top: 05vh;
+  max-width: auto; /* Ensures the image scales with its container */
+  height: auto; /* Allows the height to adjust proportionally */
+  width: auto; /* Ensure the image takes up the full width of its container */
+  max-height: 90vh; /* Limit the maximum height of the image for responsiveness */
+}
 
+/* About */
 .about {
   width: 100%;
-  min-height: 84vh;
+  min-height: 70vh;
   display: flex;
   background: black;
   align-items: center;
   justify-content: space-between;
+  padding: 80px 100px; /* Adjusted padding for better layout */
 }
+
 .about-img {
-  width: 500px;
-  height: 400px;
+  max-width: 150vh;
+  max-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 200% 100%; /* Scale the background to twice the width */
+  background-position: right center; /* Show the right half of the image */
+  background-repeat: no-repeat;
 }
 
 .img_about {
-  border-radius: 50%;
-}
-
-.about-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 55%;
+  height: 50%;
+  object-fit: cover; /* Ensures the image covers the container */
   object-position: center;
 }
+
 .about-text {
-  max-width: 500px;
+  max-width: 150vh;
+  margin: auto;
+  color: white; /* Ensure text color is visible */
 }
 .about-text h2 {
   font-size: var(--h2-font);
@@ -167,13 +191,15 @@ header .navbar li .active,header .navbar a:hover {
   font-size: var(--h1-font);
   font-weight: 600;
 }
-
 .about-text p {
   font-size: var(--p-font);
   margin: 1rem 0 var(--m-4);
   text-align: justify;
   font-weight: 300;
 }
+
+
+/* Skills */
 .skills {
   width: 100%;
   background: black;
