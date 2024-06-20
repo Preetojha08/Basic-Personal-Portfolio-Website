@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
   --logo-font: 2rem;
   --nav_menu-font: 1rem;
   --h1-font: 2.2rem;
-  --h2-font: 1.1rem;
+  --h2-font: 1.9rem;
   --p-font: 0.9rem;
   --spacing: 1px;
   /* Margins */
@@ -112,7 +112,7 @@ header .navbar li .active,header .navbar a:hover {
   color: var(--primary);
 }
 .home-text h2 {
-  font-size: var(--h2-font);
+  font-size: 1.9rem;
   margin: var(--m-1) 0;
   color: white;
   letter-spacing: var(--spacing);
@@ -171,14 +171,15 @@ header .navbar li .active,header .navbar a:hover {
 
 .img_about {
   width: 55%;
-  height: 50%;
+  height: 80%;
   object-fit: cover; /* Ensures the image covers the container */
   object-position: center;
 }
 
 .about-text {
-  max-width: 150vh;
+  max-width: 120vh;
   margin: auto;
+  margin-left: 10px;
   color: white; /* Ensure text color is visible */
 }
 .about-text h2 {
@@ -189,10 +190,10 @@ header .navbar li .active,header .navbar a:hover {
   display: flex;
   justify-content: left;
   font-size: var(--h1-font);
-  font-weight: 600;
+  font-weight: 800;
 }
 .about-text p {
-  font-size: var(--p-font);
+  font-size: 1.2rem;
   margin: 1rem 0 var(--m-4);
   text-align: justify;
   font-weight: 300;

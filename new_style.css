@@ -1,0 +1,208 @@
+/* body and Common margins  */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary); /* Ensure --primary is defined */
+}
+
+:root {
+  /* Colors */
+  --bg-color: #e7eafb;
+  --primary: #01a29c;
+  --hover: #008170;
+
+  /* Fonts */
+  --logo-font: 2rem;
+  --nav_menu-font: 1rem;
+  --h1-font: 2.2rem;
+  --h2-font: 1.9rem;
+  --p-font: 0.9rem;
+  --spacing: 1px;
+
+  /* Margins */
+  --m-1: 0.4rem;
+  --m-4: 2rem;
+}
+
+html {
+  background: #000;
+  color: #fff;
+}
+
+section {
+  padding: 50px 100px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 1);
+  padding: 18px 100px;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Adjusted box-shadow values */
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: var(--logo-font);
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: var(--nav_menu-font);
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+}
+
+/* Adjusted selector to fix the hover effect */
+.navbar a:hover {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+/* Home */
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    color: #222435;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    background-color: #000;
+    background-size: cover;
+    background-position: right center;
+  }
+  .home-text {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    color: white;
+  }
+  .home-text h1 {
+    font-size: var(--h1-font);
+    color: white;
+    letter-spacing: var(--spacing);
+  }
+  .home-text span {
+    color: var(--primary);
+  }
+  .home-text h2 {
+    font-size: 1.9rem;
+    margin: var(--m-1) 0;
+    color: white;
+    letter-spacing: var(--spacing);
+  }
+  .home-text p {
+    font-size: var(--p-font);
+    margin-bottom: var(--m-4);
+    line-height: 22px;
+    max-width: 71%;
+  }
+  .btn {
+    padding: 10px 22px;
+    background: var(--primary);
+    border-radius: 12px;
+    color: #fff;
+  }
+  .btn:hover {
+    background: linear-gradient(#01a29c,#008170);
+  }
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_img {
+    margin-left: 30vh;
+    padding-top: 05vh;
+    max-width: auto; /* Ensures the image scales with its container */
+    height: auto; /* Allows the height to adjust proportionally */
+    width: auto; /* Ensure the image takes up the full width of its container */
+    max-height: 90vh; /* Limit the maximum height of the image for responsiveness */
+  }
+  
+  /* About */
+  .about {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px; /* Adjusted padding for better layout */
+  }
+  
+  .about-img {
+    max-width: 150vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 200% 100%; /* Scale the background to twice the width */
+    background-position: right center; /* Show the right half of the image */
+    background-repeat: no-repeat;
+  }
+  
+  .img_about {
+    width: 55%;
+    height: 80%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center;
+  }
+  
+  .about-text {
+    max-width: 150vh;
+    margin: auto;
+    color: white; /* Ensure text color is visible */
+  }
+  .about-text h2 {
+    font-size: var(--h2-font);
+    color: var(--primary);
+  }
+  .about-text h1 {
+    display: flex;
+    justify-content: left;
+    font-size: var(--h1-font);
+    font-weight: 600;
+  }
+  .about-text p {
+    font-size: var(--p-font);
+    margin: 1rem 0 var(--m-4);
+    text-align: justify;
+    font-weight: 300;
+  }
+  
