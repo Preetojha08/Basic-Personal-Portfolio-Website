@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preet Ojha's Portfolio Website</title>
     <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="progresscircle.css">
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -34,6 +35,7 @@
     <section class="home" id="home_1">
       <div class="home-text">
         <h1>Hi, I'm <span>Preet Ojha</span></h1>
+        <br>
         <h2>Android Developer | Web Developer | UI/UX Designer</h2>
         <p></p>
         <a href="https://www.buymeacoffee.com/PreetOjha08" target="_blank" class="btn">Buy Me a Coffee</a>
@@ -71,61 +73,37 @@
       <!-- Content -->
       <div class="skills-content">
         <div class="skills-bars">
-          <div class="skills-text">
-            <h2>My Skills</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto
-              aspernatur quibusdam veniam ipsam. Voluptate.
-            </p>
-          </div>
 
-          <div class="skills-box">
-            <i class="fab fa-android"><h3>Android</h3></i>
-            <span>94%</span>
-            <div class="percent-bar android-bar"></div>
-          </div>
+          <!-- Front End -->
+          <div class="circlechart" data-percentage="20">jQuery</div>
+          <div class="circlechart" data-percentage="30">Script</div>
+          <div class="circlechart" data-percentage="85">.Net</div>
+          <div class="circlechart" data-percentage="-20">jQuery</div>
+          <div class="circlechart" data-percentage="30">Script</div>
+          
+          <!--Backend
+          <div class="circlechart" data-percentage="85">.Net</div>
+          <div class="circlechart" data-percentage="-20">jQuery</div>
+          <div class="circlechart" data-percentage="30">Script</div>
+          <div class="circlechart" data-percentage="85">.Net</div>
+          <div class="circlechart" data-percentage="85">.Net</div> -->
 
-          <div class="skills-box">
-            <i class="fab fa-java"><h3>Java</h3></i>
-            <span>94%</span>
-            <div class="percent-bar java-bar"></div>
-          </div>
-
-          <div class="skills-box">
-            <i class="fab fa-php"><h3>PHP</h3></i>
-            <span>74%</span>
-            <div class="percent-bar php-bar"></div>
-          </div>
-
-          <div class="skills-box">
-            <i class="fab fa-html5"><h3>HTML</h3></i>
-            <span>70%</span>
-            <div class="percent-bar html-bar"></div>
-          </div>
-          <div class="skills-box">
-            <i class="fab fa-css3"><h3>CSS</h3></i>
-            <span>70%</span>
-            <div class="percent-bar css-bar"></div>
-          </div>
-          <div class="skills-box">
-            <i class="fab fa-js"><h3>JavaScript</h3></i>
-            <span>35%</span>
-            <div class="percent-bar js-bar"></div>
-          </div>
-          <div class="skills-box">
-            <i class="fas fa-palette"><h3>UI/UX</h3></i>
-            <span>50%</span>
-            <div class="percent-bar ux-bar"></div>
-          </div>
         </div>
-        <div class="skills-img">
+        <!-- <div class="skills-img">
           <img src="img/skill_5.png" alt="" />
-        </div>
+        </div> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="progresscircle.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.circlechart').circlechart(); // Initialization
+            });
+        </script>
       </div>
     </section>
 
     <!-- Projects -->
-    <section class="portfolio" id="portfolio_4">
+    <section class="  " id="portfolio_4">
       <div class="heading">
         <h1>Porjects</h1>
       </div>
