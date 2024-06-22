@@ -237,6 +237,15 @@ header .navbar li .active,header .navbar a:hover {
   flex-direction: row; /* Ensures horizontal layout */
 }
 
+.pogramminglanguages{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds equal spacing between items */
+  padding: 20px;
+}
+
+
 /* project */
 .portfolio-content {
   display: flex;
@@ -247,19 +256,25 @@ header .navbar li .active,header .navbar a:hover {
 }
 .portfolio{
   background-color: #000;
+  height: auto;
+  width: 100%;
 }
 .p-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
-  height: 350px;
-  background: #2c3e50;
+  width: 450px;
+  height: 480px;
+  background-image: url('img/mobileframeblack.png');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-size: cover;
+  /* background: #2c3e50; */
   /* background: #000;
   border: 3px solid var(--primary); */
   margin: 20px;
   border-radius: 30px;
-  padding: 40px;
+  padding: 80px;
   text-align: center;
 }
 
@@ -339,6 +354,9 @@ header .navbar li .active,header .navbar a:hover {
 
 .contact{
   background: rgba(0, 0, 0, 1);
+  min-height: 50vh;
+  margin: auto;
+  padding: auto;
 }
 .contact-content {
   display: flex;
@@ -360,7 +378,7 @@ header .navbar li .active,header .navbar a:hover {
   margin: 1rem 0;
 }
 .info-box i {
-  font-size: 20px;
+  font-size: 30px;
   color: var(--primary);
 }
 .info-box p {
@@ -369,7 +387,7 @@ header .navbar li .active,header .navbar a:hover {
 }
 
 .social a:hover {
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 
 .social {
@@ -379,39 +397,7 @@ header .navbar li .active,header .navbar a:hover {
 .social a {
   margin-right: 1rem;
 }
-form {
-  max-width: 360px;
-  margin-top: 4rem;
-}
-form input,
-form textarea {
-  width: 100%;
-  font-size: 14px;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  margin-bottom: 12px;
-  background: #2c3e50;
-  color: var(--primary);
-  border-bottom: 1px solid var(--primary);
-}
-form textarea {
-  height: 200px;
-  resize: none;
-}
-.contact-button {
-  max-width: 100px;
-  font-weight: 600;
-  background: var(--primary);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-.contact-button:hover{
-  background: linear-gradient(#01a29c,#008170);
-}
+
 .copyright {
   padding: 20px;
   text-align: center;
@@ -510,6 +496,7 @@ form textarea {
   
   .p-box{
     width: auto;
+    back
     height: auto;
   }
 }
