@@ -5,14 +5,14 @@
 }
 
 .circle-chart {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 .circle-chart__circle {
   stroke: #00acc1;
-  stroke-width: 2;
-  stroke-linecap: square;
+  stroke-width: 2.1;
+  stroke-linecap: round;
   fill: none;
   animation: circle-chart-fill 2s reverse;
   transform: rotate(-90deg);
@@ -21,12 +21,6 @@
 
 .circle-chart__circle--negative {
   transform: rotate(-90deg) scale(1, -1);
-}
-
-.circle-chart__background {
-  stroke: #efefef;
-  stroke-width: 2;
-  fill: none;
 }
 
 .circle-chart__info {
@@ -40,13 +34,13 @@
   alignment-baseline: central;
   text-anchor: middle;
   fill: #00acc1;
-  font-size: 8px;
+  font-size: 6.5px;
 }
 
 .circle-chart__subline {
   alignment-baseline: central;
   text-anchor: middle;
-  font-size: 3px;
+  font-size: 2.5px;
 }
 
 .success-stroke {

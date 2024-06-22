@@ -203,19 +203,31 @@ header .navbar li .active,header .navbar a:hover {
 /* Skills */
 .skills {
   width: 100%;
-  background: black;
-  min-height: 100vh;
+  padding: 50px;
+  padding-top: 60px;
+  min-height: auto;
 }
+
+.frontendSkills,.backendSkills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds equal spacing between items */
+  padding: 20px;
+} 
+
 .heading {
   display: flex;
-  justify-content: center;
-  padding: 1.4rem 0;
+  justify-content: start;
+  padding: 50pt;
+  padding-bottom: 20pt;
 }
 .heading h1 {
   font-size: var(--h1-font);
   font-weight: 600;
   border-bottom: 2px solid var(--primary);
 }
+
 .skills-content {
   display: flex;
   background: #000;
@@ -225,6 +237,7 @@ header .navbar li .active,header .navbar a:hover {
   flex-direction: row; /* Ensures horizontal layout */
 }
 
+/* project */
 .portfolio-content {
   display: flex;
   background: #000;
@@ -463,9 +476,14 @@ form textarea {
   .img_about {
     border-radius: 100%;
   }
-  .skills-bars {
-    max-width: 420px;
+
+  .skills{
+    padding: auto;
+    margin: auto;
+    height: auto;
+    background-color: #01a29c ;
   }
+
   .skills-img {
     width: 400px;
     height: 300px;
