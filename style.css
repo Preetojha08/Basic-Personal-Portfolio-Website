@@ -259,29 +259,53 @@ header .navbar li .active,header .navbar a:hover {
   height: auto;
   width: 100%;
 }
+
 .p-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 450px;
-  height: 480px;
-  background-image: url('img/mobileframeblack.png');
+  width: 400px;
+  height: 690px;
+  background-image: url('img/newbigscreen.png');
   background-repeat: none;
   background-attachment: scroll;
   background-size: cover;
-  /* background: #2c3e50; */
-  /* background: #000;
-  border: 3px solid var(--primary); */
   margin: 20px;
-  border-radius: 30px;
   padding: 80px;
-  text-align: center;
 }
+
+.p-img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  padding: auto;
+}
+.p-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+}
+
+.p-box h2 {
+  font-size: var(--h2-font);
+  font-weight: 600;
+  text-align: center; 
+  margin: auto;
+}
+
+
+.p-box p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  text-justify: inter-word;
+  text-align: justify; 
+  
+}
+
 
 .c-box{
  
   width: 480px;
-  height: 170px;
+  height: 200px;
   background: #2c3e50;
   /* background: #000;
   border: 3px solid var(--primary); */
@@ -324,38 +348,22 @@ header .navbar li .active,header .navbar a:hover {
   --primary: #01a29c;
   --hover: #008170; */
 
-.c-box:hover, .p-box:hover {
+.c-box:hover {
   transform: scale(1.1);
   background: linear-gradient(#008170,#01a29c);
-}
-.p-img {
-  width: 90px;
-  height: 90px;
-}
-.p-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20%;
-}
-
-.p-box h2 {
-  font-size: var(--h2-font);
-  font-weight: 600;
-  margin: 10px 0;
-}
-.p-box p {
-  font-size: var(--p-font);
-  font-weight: 400;
 }
 
 .certificate{
   background: #000;
 }
 
+
+/* Contust Me */
+
 .contact{
-  background: rgba(0, 0, 0, 1);
-  min-height: 50vh;
-  margin: auto;
+  background-color: #000;
+  height: auto;
+  width: 100%;
   padding: auto;
 }
 .contact-content {
@@ -496,7 +504,6 @@ header .navbar li .active,header .navbar a:hover {
   
   .p-box{
     width: auto;
-    back
     height: auto;
   }
 }
