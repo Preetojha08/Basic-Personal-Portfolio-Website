@@ -264,8 +264,9 @@ header .navbar li .active,header .navbar a:hover {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 690px;
-  background-image: url('img/newbigscreen.png');
+  height: 800px;
+  /* background-image: url('img/newbigscreen.png'); */
+  background-image: url(img/newnew.png);
   background-repeat: none;
   background-attachment: scroll;
   background-size: cover;
@@ -292,23 +293,39 @@ header .navbar li .active,header .navbar a:hover {
   margin: auto;
 }
 
-
 .p-box p {
-  font-size: var(--p-font);
   font-weight: 400;
+  font-size: var(--p-font);
   text-justify: inter-word;
-  text-align: justify; 
-  
+  text-align: justify;  
 }
 
+.p-box .btn{
+  padding: 12px;
+  background: var(--primary);
+  border-radius: 12px;
+  color: #fff;
+  width: 105px;
+  font-weight: 400;
+  font-size: var(--p-font);
+  text-align: center;
+}
+
+/* Certificate Part */
+
+.certificate-content {
+  display: flex;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .c-box{
  
   width: 480px;
-  height: 200px;
+  height: 170px;
   background: #2c3e50;
-  /* background: #000;
-  border: 3px solid var(--primary); */
   margin: 20px;
   border-radius: 30px;
   padding: 30px;
@@ -335,7 +352,7 @@ header .navbar li .active,header .navbar a:hover {
 }
 
 .c-box h2{
-  font-size: var(--h2-font);
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 10px 0;
 }
@@ -358,22 +375,31 @@ header .navbar li .active,header .navbar a:hover {
 }
 
 
-/* Contust Me */
+/* Contast Me */
 
 .contact{
   background-color: #000;
   height: auto;
   width: 100%;
+  height: 80vh;
+  margin: auto;
+  align-items: center;
   padding: auto;
 }
+
 .contact-content {
   display: flex;
-  background: #000;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  width: 50vh;
+  padding: 10px;
+  margin: auto;
+  margin-top: 80px;
 }
+
 .contact-info {
-  max-width: 500px;
+  width: auto;
+  align-self: center;
 }
 
 .p_email{
@@ -385,13 +411,20 @@ header .navbar li .active,header .navbar a:hover {
   align-items: center;
   margin: 1rem 0;
 }
+
 .info-box i {
   font-size: 30px;
   color: var(--primary);
 }
+
 .info-box p {
   margin-left: 1rem;
   font-weight: 400;
+  font-size: 25px;
+}
+
+.info-box p span{
+  color: #000;
 }
 
 .social a:hover {
