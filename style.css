@@ -144,7 +144,7 @@ header .navbar li .active,header .navbar a:hover {
   max-width: auto; /* Ensures the image scales with its container */
   height: auto; /* Allows the height to adjust proportionally */
   width: auto; /* Ensure the image takes up the full width of its container */
-  max-height: 90vh; /* Limit the maximum height of the image for responsiveness */
+  max-height: 99vh; /* Limit the maximum height of the image for responsiveness */
 }
 
 /* About */
