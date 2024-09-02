@@ -154,7 +154,6 @@ header .navbar li .active,header .navbar a:hover {
   display: flex;
   background: black;
   align-items: center;
-  justify-content: space-between;
   padding: 80px 100px; /* Adjusted padding for better layout */
 }
 
@@ -182,22 +181,54 @@ header .navbar li .active,header .navbar a:hover {
   margin-left: 10px;
   color: white; /* Ensure text color is visible */
 }
+
+.aboutme-text {
+  margin: auto;
+  padding-top: 50px;
+  width: 150vh;
+  color: white; /* Ensure text color is visible */
+}
+
+/* Styles for .about-text */
 .about-text h2 {
   font-size: var(--h2-font);
   color: var(--primary);
 }
+
 .about-text h1 {
   display: flex;
   justify-content: left;
   font-size: var(--h1-font);
   font-weight: 800;
 }
+
 .about-text p {
   font-size: 1.2rem;
   margin: 1rem 0 var(--m-4);
   text-align: justify;
   font-weight: 300;
 }
+
+/* Styles for .aboutme-text */
+.aboutme-text h2 {
+  font-size: var(--h2-font);
+  color: var(--primary);
+}
+
+.aboutme-text h1 {
+  display: flex;
+  justify-content: left;
+  font-size: var(--h1-font);
+  font-weight: 800;
+}
+
+.aboutme-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0 var(--m-4);
+  text-align: justify;
+  font-weight: 300;
+}
+
 
 
 /* Skills */
@@ -314,6 +345,8 @@ header .navbar li .active,header .navbar a:hover {
 /* Certificate Part */
 
 .certificate-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   background: #000;
   align-items: center;
@@ -392,9 +425,8 @@ header .navbar li .active,header .navbar a:hover {
   flex-wrap: wrap;
   align-items: center;
   width: 50vh;
-  padding: 10px;
-  margin: auto;
-  margin-top: 80px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 .contact-info {
@@ -420,7 +452,7 @@ header .navbar li .active,header .navbar a:hover {
 .info-box p {
   margin-left: 1rem;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.2rem;
 }
 
 .info-box p span{
@@ -436,7 +468,7 @@ header .navbar li .active,header .navbar a:hover {
   align-items: center;
 }
 .social a {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .copyright {
@@ -499,6 +531,8 @@ header .navbar li .active,header .navbar a:hover {
   .about-img {
     width: 300px;
     height: 300px;
+    padding: 10px;
+    background-color: #008170;
   }
   .img_about {
     border-radius: 100%;
